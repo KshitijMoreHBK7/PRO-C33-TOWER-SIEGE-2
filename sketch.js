@@ -126,7 +126,7 @@ function draw() {
 
   
 
-  fill("gold")
+  
     imageMode(CENTER)
     image(hexa_image,hexa.position.x,hexa.position.y,40,40)
   
@@ -144,7 +144,12 @@ function mouseReleased(){
   chain.fly();
 }
 
- 
+function keyPressed(){
+  if(keyCode===32){
+   chain.attach(hexa)
+  }
+  
+  }
 
 
 
